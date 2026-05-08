@@ -1,0 +1,17 @@
+@model List<FilmListesi_proje1.Models.Movie>
+
+<h1>Film Listesi</h1>
+
+<a href="/Movie/Create">Film Ekle</a>
+
+<br>
+<br>
+
+@foreach (var movie in Model)
+{
+    <div>
+        @movie.MovieName - @movie.Genre
+    </div>
+
+    <br>
+}
